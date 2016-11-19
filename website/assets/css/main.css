@@ -1,0 +1,30 @@
+#step1, #step2, #finished  {
+    display: none;
+    text-align: center;
+    margin: auto
+}
+
+#participateready, #forgivenessform, #apologyform  {
+    text-align: center;
+    margin: auto
+
+}
+
+#message, #message2 {
+    width: 70%;
+    height: 100px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+/*
+#apologyprompt {
+    padding-bottom: 30px;
+}
+*/
+
+
+
+
+
+

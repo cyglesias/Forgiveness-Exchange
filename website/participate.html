@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgiveness Network</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/lumen/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand navbar-link" href="index.html"><strong>The Forgiveness Exchange</strong></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active" role="presentation"><a href="index.html">main </a></li>
+                    <li class="active" role="presentation"><a href="about.html">about </a></li>
+                    <li class="active" role="presentation"><a href="participate.html">participate </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+<div class= "jumbotronpadding">
+<div class="jumbotron" id="participateready">
+    <h2 class="text-center" id="introheader">Join our community</h2>
+        <p class="text-muted">Offer forgiveness to an anonymous submission. Seek forgiveness with your own submission.
+        <p><a class="btn btn-info btn-lg" role="button" id= "readybutton">I'm Ready!</a></p>
+</div>   
+    </div>
+      
+	
+<div class="jumbotron" id="step1">
+        <form id="forgivenessform">
+            <h2 id="introheader">Forgive</h2>
+            <p class="text-muted">Forgive the anonymous submission below to unlock your own submission form.</p>
+                <div id="apologyprompt"> </div>
+            <textarea id="message" placeholder="..." required maxlength="1000"></textarea>        
+            <p><button type="submit" id="send" class="btn btn-info btn-lg">Submit Forgiveness</button></p>
+        </form>  
+    </div>
+
+
+
+<div class="jumbotron" id="step2">
+        <form id="apologyform">
+            <h2 id="introheader">Seek Forgiveness</h2>
+            <p class="text-muted">Offer up an apology, an admission of guilt, or anything you need to get off your chest.</p>
+            <textarea id="message2" placeholder="..." required maxlength="1000"></textarea>        
+            <p><button type="submit" id="send" class="btn btn-info btn-lg">Submit for Forgiveness</button></p>
+        </form>  
+</div>
+
+
+<div class="jumbotron" id="finished">
+            <h2 class="text-center" id="introheader">You're all Set!</h2>
+    <p class="text-muted"> Thank you for your participation. Below is a private link where you'll find forgiveness. </p>
+            <p><a class="btn btn-info btn-lg" role="button">Forgiveness Link</a></p>
+</div>  
+ 
+
+
+    
+<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/script.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
