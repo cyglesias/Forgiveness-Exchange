@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 #step1, #step2, #finished  {
-=======
-.wrapper2 {
->>>>>>> origin/master
     display: none;
     text-align: center;
     margin: auto
 }
 
-<<<<<<< HEAD
 #participateready, #forgivenessform, #apologyform  {
     text-align: center;
     margin: auto
@@ -21,28 +16,5 @@
     margin-bottom: 30px;
     margin-top: 20px;
 }
-
-/*
-#apologyprompt {
-    padding-bottom: 30px;
-}
-*/
-
-
-
-=======
-.wrapper1 {
-    display: none;
-    text-align: center;
-    margin:auto;
-}
-
-.wrapper3 {
-    display: none;
-    text-align: center;
-    margin:auto;
-}
->>>>>>> origin/master
-
 
 

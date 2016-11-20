@@ -7,17 +7,8 @@ $(document).ready(function(){
         storageBucket: "forgiveness-exchange.appspot.com",
         messagingSenderId: "878071377818"
     };
-<<<<<<< HEAD
 firebase.initializeApp(config);
 
-=======
-    firebase.initializeApp(config);
-    
-    var database = firebase.database();
-    var apology = database.ref('apology');
-    var forgiveness = database.ref('forgiveness');
-    
->>>>>>> origin/master
     $("#step1").hide();
     $("#step2").hide();
     $("#finished").hide();
@@ -27,7 +18,6 @@ firebase.initializeApp(config);
  $('#readybutton').click(function() {
         $("#participateready").hide();
         $("#step1").show();
-<<<<<<< HEAD
         var database = firebase.database();
         var apology = database.ref("apology");
 
@@ -41,8 +31,6 @@ function gotOne(apology) {
     $("#apologyprompt").append(apology.text);
 }
           
-=======
->>>>>>> origin/master
 });
 
 // when the user clicks submit after writing a forgiveness, preventdefault prevents the page from refreshing
@@ -51,7 +39,6 @@ $("#forgivenessform").submit(function(e){
       $("#step2").show();
        $("#step1").hide();
         $("#participateready").hide();
-<<<<<<< HEAD
     
 var database = firebase.database();
     var forgiveness = database.ref('forgiveness');    
@@ -62,14 +49,10 @@ var database = firebase.database();
     console.log (forgivenesstext)
     forgiveness.push(forgivenesstext);
     forgiveness.push(forgivenesstext, finished);
-=======
-
->>>>>>> origin/master
 });
 
 // when the user clicks submit after writing an apology, preventdefault prevents the page from refreshing
 $("#apologyform").submit(function(e){
-<<<<<<< HEAD
     e.preventDefault() 
     $("#finished").show();
     $("#step2").hide();
@@ -81,41 +64,18 @@ $("#apologyform").submit(function(e){
     var apology = database.ref('apology');    
     var apologytext = {
         text: $("#message2").val(), 
-        approved: false
+        approved: false,
+        date: Date
+    
         
         }; 
     console.log (apologytext);
     apology.push(apologytext);
     apology.push(apologytext, finished);
+var x= date();
+    consolelog(x);
 });
 
-=======
-      e.preventDefault() 
-      $("#finished").show();
-       $("#step2").hide();
-      $("#step1").hide();
-    $("#participateready").hide;
-      
-      var apologytext = {
-          apology: 
-      }
-      apologytext = $("#message").val()
-      console.log (apologytext);
-        apology.push(apologytext);
-      
-      
-    
-});
-// defining variable to grab text in form with ID #message
-//      var apologytext;
-//      apologytext = $("#message").val()
-//      console.log (apologytext)
-//      $(".wrapper").hide();
-//      $(".wrapper2").show();
-//    $('.saveForgive').click(function() {
-//        
-//        // get text of forg
-//        // show apology
-//        $('.add').show();
-//    });
->>>>>>> origin/master
+//var timeStamp = Math.floor(Date.now() / 1000);
+//console.log(timestamp);
+ 
