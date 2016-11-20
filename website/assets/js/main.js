@@ -41,10 +41,12 @@ $("#forgivenessform").submit(function(e){
         $("#participateready").hide();
     
 var database = firebase.database();
-    var forgiveness = database.ref('forgiveness');    
+    var forgiveness = database.ref('forgiveness');
+    var timestamp= Date();
     var forgivenesstext = {
         text: $("#message").val(),   
-        approved: false
+        approved: false,
+        time: timestamp
         }; 
     console.log (forgivenesstext)
     forgiveness.push(forgivenesstext);
@@ -61,11 +63,13 @@ $("#apologyform").submit(function(e){
     var database = firebase.database();
   
 
-    var apology = database.ref('apology');    
+    var apology = database.ref('apology');  
+    var timestamp = Date();
+    console.log(timestamp);
     var apologytext = {
         text: $("#message2").val(), 
         approved: false,
-        date: Date
+        time: timestamp
     
         
         }; 
@@ -78,4 +82,6 @@ var x= date();
 
 //var timeStamp = Math.floor(Date.now() / 1000);
 //console.log(timestamp);
+
+
  
